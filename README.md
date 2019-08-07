@@ -1,3 +1,10 @@
+# Fork Note
+Fork from [microsoft/pyright](https://github.com/microsoft/pyright) but disabled IntelliSense completions.
+
+Because currnet version of pyright will have duplicated IntelliSense suggestion with the VSCode python extension, and there's no way to disable it from pyright side.
+
+---
+
 ![Pyright](/docs/img/PyrightLarge.png)
 
 # Static type checker for Python
@@ -32,7 +39,7 @@ For rich Python editing and debugging capabilities with Visual Studio Code, be s
 ## Installation
 You can install the latest-published version of the Pyright VS Code extension directly from VS Code. Simply open the extensions panel and search for `pyright`.
 
-The latest version of the command-line tool can be installed with npm, which is part of node. If you don't have a recent version of node on your system, install that first from [nodejs.org](nodejs.org). 
+The latest version of the command-line tool can be installed with npm, which is part of node. If you don't have a recent version of node on your system, install that first from [nodejs.org](nodejs.org).
 
 To install pyright globally:
 `npm install -g pyright`

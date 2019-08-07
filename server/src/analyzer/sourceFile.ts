@@ -527,21 +527,23 @@ export class SourceFile {
 
     getCompletionsForPosition(position: DiagnosticTextPosition,
             configOptions: ConfigOptions, importMap: ImportMap): CompletionList | undefined {
+        // disable completion
+        return undefined;
 
-        // If we have no completed analysis job, there's nothing to do.
-        if (!this._analysisJob.parseResults) {
-            return undefined;
-        }
+        // // If we have no completed analysis job, there's nothing to do.
+        // if (!this._analysisJob.parseResults) {
+        //     return undefined;
+        // }
 
-        // This command should be called only for open files, in which
-        // case we should have the file contents already loaded.
-        if (this._fileContents === undefined) {
-            return undefined;
-        }
+        // // This command should be called only for open files, in which
+        // // case we should have the file contents already loaded.
+        // if (this._fileContents === undefined) {
+        //     return undefined;
+        // }
 
-        return CompletionProvider.getCompletionsForPosition(
-            this._analysisJob.parseResults, this._fileContents, position,
-            this._filePath, configOptions, importMap);
+        // return CompletionProvider.getCompletionsForPosition(
+        //     this._analysisJob.parseResults, this._fileContents, position,
+        //     this._filePath, configOptions, importMap);
     }
 
     getAnalysisPassCount() {

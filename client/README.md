@@ -1,3 +1,10 @@
+# Fork Note
+Fork from [microsoft/pyright](https://github.com/microsoft/pyright) but disabled IntelliSense completions.
+
+Because currnet version of pyright are having duplicated IntelliSense suggestion with the VSCode python extension, and there's no way to disable it from pyright side.
+
+---
+
 # Static type checker for Python
 
 ### Speed

@@ -1,16 +1,16 @@
 {
     "name": "pyright",
-    "displayName": "Pyright",
-    "description": "VS Code static type checking for Python",
+    "displayName": "Pyright(intellisense disabled)",
+    "description": "Fork from microsoft/pyright but disabled IntelliSense completions",
     "version": "1.0.52",
     "license": "MIT",
     "author": {
         "name": "Microsoft Corporation"
     },
-    "publisher": "ms-pyright",
+    "publisher": "giyyapan",
     "repository": {
         "type": "git",
-        "url": "https://github.com/Microsoft/pyright"
+        "url": "https://github.com/giyyapan/pyright"
     },
     "engines": {
         "vscode": "^1.26.0"
